@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MathTest</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/controller.js"></script>
+
+    </head>
+
+    <body>
+        <div class = "main"> 
+            <div class = "tabs">
+                <ul class="tabNavigation">  
+                    <li><a class="" href="#test">Test</a></li>
+                    <li><a class="" href="#settings">Settings</a></li>
+                </ul>
+            
+
+                    <div id = "test" class="entry">
+                        <div class="mainText">
+                            <table>
+                                <tr>
+                                    <td id="imgTd">
+                                        <img src="question_mark.jpg" alt="question_mark">
+                                    </td>
+                                    <td>
+                                        <h2>Check your knowledge</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        <p class = "exercise"></p>
+                                        <div>
+                                            <p>Enter answer below:</p>
+                                            <span>
+                                                <input id="answer" placeholder="enter answer here ..."
+                                                       type="text"/>
+                                                <button id="btn">Send answer</button>
+                                            </span>
+                                        </div>
+                                        <div class="result">
+                                            <h2>Results</h2>
+                                            <div class="correct">
+                                                <h3>Success</h3>
+                                                <p></p>
+                                            </div>
+                                            <div class="incorrect">
+                                                <h3>Failure</h3>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id = "settings" class="entry">
+                        <div class="mainText">
+                            <h2>Set the test parameters</h2>
+                            <div>Addition:  <input type="checkbox" class="addtn"/></div>
+                            <div>Subtraction:  <input type="checkbox" class="subtr"/></div>
+                            <div>Multiplication:  <input type="checkbox" class="multp"/></div>
+                            <div>Division:  <input type="checkbox" class="divsn"/></div>
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+    </body>
+</html>
